@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Registro</title>
+  <link rel="icon" href="../faviconconfiguroweb.png">
+  <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #fd7e1b;
+    }
+
+    .container {
+      width: 50%;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 30px;
+      border: transparent;
+      font-family: "Mitr", sans-serif;
+      margin-top: 100px;
+      padding-top: 5px;
+      padding-bottom: 30px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .form-group {
+      margin: 10px 200px 0px 200px;
+      padding: 3px 150px 6px 1px;
+    }
+
+    input[type="text"] {
+      border: 1px solid rgb(199, 198, 198);
+      border-radius: 10px;
+      padding: 3px 200px 6px 3px;
+    }
+
+    input[type="password"] {
+      border: 1px solid rgb(199, 198, 198);
+      border-radius: 10px;
+      padding: 3px 200px 6px 3px;
+    }
+
+    button[type="submit"] {
+      border-collapse: collapse;
+      border: transparent;
+      border-radius: 15px;
+      font-family: "Mitr", sans-serif;
+      color: black;
+      margin: 15px 0px 5px 310px;
+      padding: 5px 50px 5px 50px;
+      background-color: #298dba;
+      transition: 0.5s;
+    }
+
+    button[type="submit"]:hover {
+      color: rgb(255, 255, 255);
+      background-color: #fd7e1b;
+    }
+
+    .returnlogin {
+      text-decoration: none;
+      font-size: 13px;
+      border-collapse: collapse;
+      border: transparent;
+      border-radius: 15px;
+      color: white;
+      margin: 15px 0px 0px 220px;
+      padding: 5px 50px 5px 50px;
+      background-color: #fd7e1b;
+      transition: 0.5s;
+    }
+
+    .form-control {
+      font-family: "Mitr", sans-serif;
+    }
+
+    .returnlogin:hover {
+      background-color: #298dba;
+      color: white;
+    }
+
+    .footer {
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      width: 100%;
+      height: 50px;
+      color: white;
+      font-family: "Mitr", sans-serif;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-color: #298dba;
+    }
+
+    .footer p {
+      text-align: right;
+      margin-right: 50px;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <form action="add.php" method="post">
+      <div class="section">
+        <h1>Registro de Usuario</h1>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Usuario:</label>
+        <br>
+        <input type="text" class="form-control" name="username" placeholder="Elige tu nombre de usuario" required />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Nombre:</label>
+        <br>
+        <input type="text" class="form-control" name="name" placeholder="Ingresa tu nombre completo" required />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Contraseña:</label>
+        <br>
+        <input type="password" class="form-control" name="password" placeholder="Ingresa tu contraseña" required />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Confirmar:</label>
+        <br>
+        <input type="password" class="form-control" name="cfpassword" placeholder="Confirma tu contraseña" required />
+      </div>
+      <div class="form-button">
+        <button type="submit" class="btn btn-success">Registrar ahora</button>
+      </div>
+    </form>
+    <br>
+    <div class="form-button">
+      <a name="" id="" class="returnlogin" href="../index.html" role="button">¿Ya tienes una cuenta? Volver al login</a>
+    </div>
+  </div>
+  </form>
+  </div>
+  <div class="footer">
+    <p>ConfiguroWeb</p>
+  </div>
+</body>
+
+</html>
